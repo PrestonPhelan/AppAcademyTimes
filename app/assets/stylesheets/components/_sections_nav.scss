@@ -10,11 +10,12 @@
   font-family: $sans-serif;
 }
 
-.sections-nav li:hover {
+.sections-nav li a:hover {
   background-color: $light-gray;
+  text-decoration: none;
 }
 
-.sections-nav li:last-of-type:hover {
+#all-link:hover {
   text-decoration: underline;
   background-color: transparent;
 }
