@@ -28,6 +28,10 @@
 	color: $dark-gray;
 }
 
+.language-nav li:first-of-type {
+	font-weight: bold;
+}
+
 .language-nav ul {
 	display: flex;
 }
@@ -48,8 +52,7 @@
 }
 
 .masthead-links li {
-	// margin-left: 10px;
-	// margin-right: 10px;
+
 	padding-left: 10px;
 	padding-right: 10px;
 	border-right: 1px solid $light-gray;
@@ -59,22 +62,25 @@
 	border-right: none;
 }
 
-.masthead-links button {
-	background: none;
-	padding: 0px;
-	color: #000;
-	font-weight: normal;
-	border: none;
-}
 
 .masthead-links button:hover {
 	background-color: $lightest-gray;
+	text-decoration: underline;
 }
 
 .masthead-links a,
 .masthead-links button,
 .masthead-links time {
 	margin-right: 10px;
+}
+
+.masthead-links button {
+	background: none;
+	padding: 0px;
+	color: #000;
+	font-weight: normal;
+	border: none;
+	margin-right: 0px;
 }
 
 .masthead-links i {
