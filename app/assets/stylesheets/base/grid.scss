@@ -1,19 +1,48 @@
 .col {
-  // ...
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.col section {
+  display: inline-block;
 }
 
 /* Attribute selector targeting all elements
 with a class attribute containing 'col-' */
 [class*='col-'] {
-  // ...
+  float: left;
+  padding-right: 10px;
+  top: 0;
 }
 
 [class*='col-']:last-of-type {
-  // ...
+  padding-right: 0;
+}
+
+.col-1-3 {
+  width: 33.3%
+}
+
+.col-2-3 {
+  width: 66.6%
+}
+
+.col-1-2 {
+  width: 50%
+}
+
+.video {
+  width: 100%;
+}
+
+.cf:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 @media all and (max-width: 1000px) {
   [class*='col-'] {
-    // width:
+    width: 100%;
   }
 }
